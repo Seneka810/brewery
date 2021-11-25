@@ -1,6 +1,7 @@
 package com.kord.brewery.service;
 
 import com.kord.brewery.web.model.BeerDto;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -14,5 +15,10 @@ public class BeerServiceImpl implements BeerService {
                 .beerName("Obolon")
                 .beerStyle("Dark")
                 .build();
+    }
+
+    @Override
+    public BeerDto saveNewBeer(BeerDto beerDto) {
+        return BeerDto.builder().id(UUID.randomUUID()).build();
     }
 }
