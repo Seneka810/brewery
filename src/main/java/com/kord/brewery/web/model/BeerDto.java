@@ -28,6 +28,6 @@ public class BeerDto {
     @Positive
     private Long upc;
 
-    private OffsetDateTime createDate;
-    private OffsetDateTime lastUpdateDate;
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastUpdatedDate;
 }
