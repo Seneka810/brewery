@@ -79,7 +79,8 @@ class BeerControllerTest {
                                 fields.withPath("lastUpdatedDate").description("Date Updated").type(OffsetDateTime.class),
                                 fields.withPath("beerName").description("Beer Name"),
                                 fields.withPath("beerStyle").description("Beer Style"),
-                                fields.withPath("upc").description("UPC of Beer")
+                                fields.withPath("upc").description("UPC of Beer"),
+                                fields.withPath("price").description("Price of Beer")
                         )));
     }
 
@@ -106,7 +107,8 @@ class BeerControllerTest {
                                 fields.withPath("lastUpdatedDate").description("Date Updated").ignored(),
                                 fields.withPath("beerName").description("Beer Name"),
                                 fields.withPath("beerStyle").description("Beer Style"),
-                                fields.withPath("upc").description("UPC of Beer")
+                                fields.withPath("upc").description("UPC of Beer"),
+                                fields.withPath("price").description("Price of Beer")
                         )));
     }
 
